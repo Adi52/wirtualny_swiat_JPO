@@ -84,7 +84,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Trawa.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Owca.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Wilk.h">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
 		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/main.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/Swiat.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/Wyswietlanie.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Organizm.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Roslina.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Zwierze.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Trawa.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Owca.cpp">
+			<Option target="wirtualny_swiat_JPO"/>
+		</Unit>
+		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Wilk.cpp">
 			<Option target="wirtualny_swiat_JPO"/>
 		</Unit>
 		<Unit filename="C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/CMakeLists.txt">
