@@ -18,3 +18,6 @@ public:
 
 
 #endif //WIRTUALNY_SWIAT_JPO_ZWIERZE_H
+
+
+// moje zwierzeta jeż, lis i jeden mój

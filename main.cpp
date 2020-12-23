@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 
 #include "include/Swiat.h"
@@ -12,6 +13,9 @@ using namespace std;
 
 
 int main() {
+    char temp = 'x';
+
+    srand(time(NULL));
 
 
 
@@ -24,15 +28,19 @@ int main() {
     cin >> wysokoscPlanszy;
 
     Swiat swiat(szerokoscPlanszy, wysokoscPlanszy);
-    Wyswietlanie wyswietlanie(szerokoscPlanszy, wysokoscPlanszy);
 
     swiat.poczatkowyStanMapy(); // Generuje organizmy wpisane na stałe
 
-    wyswietlanie.wyswietlRunde(1);
-    swiat.rysujMape();
+    do {
+        swiat.wykonajTure();
 
-    wyswietlanie.wyswietlAkcje("No to jest nasza pierwsza akcja, chopaki zaczynamy!");
-    wyswietlanie.wyswietlPodpis();
+        cout << endl << "Naciśnij enter aby wykonać następną turę";
+        cout << endl << "Aby wyjść wpisz 'q'" << endl;
+        cin.get(temp);
+    } while(temp == '\n');
+
+
+
 
     return 0;
 }

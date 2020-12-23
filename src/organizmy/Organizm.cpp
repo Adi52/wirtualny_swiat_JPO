@@ -1,10 +1,14 @@
 //
 // Created by abiel on 21.12.2020.
 //
+#include <iostream>
 #include "../../include/organizmy/Organizm.h"
+
+
 
 #include <vector>
 
+using namespace std;
 
 Organizm::Organizm() {
     sila = 0;
@@ -15,6 +19,7 @@ Organizm::Organizm() {
     zyje = false;
     znak = 'A';
 }
+
 
 void Organizm::umiescWSwiecie(Swiat *nowySwiat) {
     zyje = true;

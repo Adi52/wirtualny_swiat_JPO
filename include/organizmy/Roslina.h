@@ -17,3 +17,6 @@ public:
 
 
 #endif //WIRTUALNY_SWIAT_JPO_ROSLINA_H
+
+
+// Moje rosliny: koka, mlecz

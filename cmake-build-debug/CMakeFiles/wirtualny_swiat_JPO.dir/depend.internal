@@ -21,32 +21,38 @@ CMakeFiles/wirtualny_swiat_JPO.dir/src/Wyswietlanie.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/Wyswietlanie.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Organizm.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Organizm.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Roslina.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Roslina.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Zwierze.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Zwierze.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/rosliny/Trawa.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Trawa.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Trawa.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Owca.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Owca.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Owca.cpp
 CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Wilk.cpp.obj
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Wyswietlanie.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
  C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Wilk.h

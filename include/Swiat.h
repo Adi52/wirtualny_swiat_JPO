@@ -7,7 +7,7 @@
 
 #include <vector>
 
-
+#include "Wyswietlanie.h"
 #include "organizmy/Organizm.h"
 
 class Organizm;
@@ -22,18 +22,22 @@ public:
 
     void poczatkowyStanMapy();
     void wykonajTure();
-    void rysujSwiat();
+    void rysujMape();
     void dodajOrganizm(Organizm *organizm);
+    void idz(Organizm *organizm, int x, int y);
 
 
     int podajWysokosc();
     int podajSzerokosc();
 
-    void rysujMape();
-    void wypiszOgranizmy();
+    bool organizmNaPolu(int x, int y);
+    void wypiszOgranizmy(); // raczej do usuniecia.
 
     int poprawWspolrzendna(float wspolrzedna, char wariant) const;
     int iloscOrganizmow();
+
+    Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);
+
 
 
 private:

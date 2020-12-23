@@ -5,13 +5,18 @@
 #ifndef WIRTUALNY_SWIAT_JPO_WYSWIETLANIE_H
 #define WIRTUALNY_SWIAT_JPO_WYSWIETLANIE_H
 
+#include <iostream>
+
+using namespace std;
+
 class Wyswietlanie {
 public:
-    Wyswietlanie(int, int);
+    Wyswietlanie(int _wysokosc, int _szerokosc);
+
     int wysokosc;
     int szerokosc;
 
-    void wyswietlAkcje(std::string);
+    void wyswietlAkcje(string wykonanaAkcja);
     void wyswietlPodpis();
     void wyswietlRunde(int);
 
