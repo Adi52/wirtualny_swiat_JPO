@@ -10,3 +10,6 @@ Wilk::Wilk() {
     znak = "🐺";
 }
 
+Organizm *Wilk::dziecko() {
+    return new Wilk();
+}

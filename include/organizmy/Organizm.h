@@ -25,6 +25,8 @@ public:
     void umiescWSwiecie(Swiat *swiat);
     void przypiszWspolrzedne(float x, float y);
 
+
+    virtual Organizm *dziecko() = 0;
     virtual void akcja() = 0;
 //    virtual void kolizja() = 0;
 

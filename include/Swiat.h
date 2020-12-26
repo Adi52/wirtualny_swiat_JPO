@@ -25,11 +25,16 @@ public:
     void rysujMape();
     void dodajOrganizm(Organizm *organizm);
     void idz(Organizm *organizm, int x, int y);
+    char losujKierunek();
 
+    void rozmnoz(Organizm *organizm);
 
     int podajWysokosc();
     int podajSzerokosc();
 
+
+    bool wolneWokol(int x, int y);
+    bool miejsceZajete(int x, int y);
     bool organizmNaPolu(int x, int y);
     void wypiszOgranizmy(); // raczej do usuniecia.
 

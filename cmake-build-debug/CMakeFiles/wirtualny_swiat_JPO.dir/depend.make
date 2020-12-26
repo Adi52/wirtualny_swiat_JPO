@@ -36,12 +36,37 @@ CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\org
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\organizmy\Zwierze.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\src\organizmy\Zwierze.cpp
 
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\src\organizmy\rosliny\Koka.cpp
+
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\src\organizmy\rosliny\Mlecz.cpp
+
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\Swiat.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\Wyswietlanie.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\organizmy\Organizm.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\organizmy\Roslina.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\organizmy\rosliny\Trawa.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\src\organizmy\rosliny\Trawa.cpp
+
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\include\Swiat.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\include\Wyswietlanie.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\include\organizmy\Organizm.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\include\organizmy\Zwierze.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\include\organizmy\zwierzeta\Goryl.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj: ..\src\organizmy\zwierzeta\Goryl.cpp
+
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\include\Swiat.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\include\Wyswietlanie.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\include\organizmy\Organizm.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\include\organizmy\Zwierze.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\include\organizmy\zwierzeta\Jez.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj: ..\src\organizmy\zwierzeta\Jez.cpp
+
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\include\Swiat.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\include\Wyswietlanie.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\include\organizmy\Organizm.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\include\organizmy\Zwierze.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\include\organizmy\zwierzeta\Lis.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj: ..\src\organizmy\zwierzeta\Lis.cpp
 
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Owca.cpp.obj: ..\include\Swiat.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Owca.cpp.obj: ..\include\Wyswietlanie.h

@@ -11,7 +11,9 @@ Roslina::Roslina() {
 }
 
 void Roslina::akcja() {
-    // Jakas tam szansa na rozprzestrenienie się
+    if (rand() % 100 < 10) { // 20% szans na rozprzestrzenienie się
+        swiat->rozmnoz(this);
+    }
 }
 
 

@@ -11,6 +11,8 @@
 class Trawa: public Roslina {
 public:
     Trawa();
+    
+    Organizm* dziecko();
 };
 
 

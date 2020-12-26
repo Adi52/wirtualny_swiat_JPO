@@ -10,3 +10,8 @@ Owca::Owca() {
     znak = "🐑";
 }
 
+Organizm *Owca::dziecko() {
+    return new Owca();
+}
+
+

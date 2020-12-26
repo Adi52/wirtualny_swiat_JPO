@@ -10,6 +10,8 @@
 class Owca : public Zwierze {
 public:
     Owca();
+    Organizm* dziecko();
+
 };
 
 

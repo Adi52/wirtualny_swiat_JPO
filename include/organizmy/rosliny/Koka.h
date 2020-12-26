@@ -1,0 +1,8 @@
+//
+// Created by abiel on 23.12.2020.
+//
+
+#ifndef WIRTUALNY_SWIAT_JPO_KOKA_H
+#define WIRTUALNY_SWIAT_JPO_KOKA_H
+
+#endif //WIRTUALNY_SWIAT_JPO_KOKA_H

@@ -286,6 +286,60 @@ src\organizmy\Zwierze.cpp.s:
 	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.s
 .PHONY : src\organizmy\Zwierze.cpp.s
 
+src\organizmy\rosliny\Koka.obj: src\organizmy\rosliny\Koka.cpp.obj
+
+.PHONY : src\organizmy\rosliny\Koka.obj
+
+# target to build an object file
+src\organizmy\rosliny\Koka.cpp.obj:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj
+.PHONY : src\organizmy\rosliny\Koka.cpp.obj
+
+src\organizmy\rosliny\Koka.i: src\organizmy\rosliny\Koka.cpp.i
+
+.PHONY : src\organizmy\rosliny\Koka.i
+
+# target to preprocess a source file
+src\organizmy\rosliny\Koka.cpp.i:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.i
+.PHONY : src\organizmy\rosliny\Koka.cpp.i
+
+src\organizmy\rosliny\Koka.s: src\organizmy\rosliny\Koka.cpp.s
+
+.PHONY : src\organizmy\rosliny\Koka.s
+
+# target to generate assembly for a file
+src\organizmy\rosliny\Koka.cpp.s:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.s
+.PHONY : src\organizmy\rosliny\Koka.cpp.s
+
+src\organizmy\rosliny\Mlecz.obj: src\organizmy\rosliny\Mlecz.cpp.obj
+
+.PHONY : src\organizmy\rosliny\Mlecz.obj
+
+# target to build an object file
+src\organizmy\rosliny\Mlecz.cpp.obj:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj
+.PHONY : src\organizmy\rosliny\Mlecz.cpp.obj
+
+src\organizmy\rosliny\Mlecz.i: src\organizmy\rosliny\Mlecz.cpp.i
+
+.PHONY : src\organizmy\rosliny\Mlecz.i
+
+# target to preprocess a source file
+src\organizmy\rosliny\Mlecz.cpp.i:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.i
+.PHONY : src\organizmy\rosliny\Mlecz.cpp.i
+
+src\organizmy\rosliny\Mlecz.s: src\organizmy\rosliny\Mlecz.cpp.s
+
+.PHONY : src\organizmy\rosliny\Mlecz.s
+
+# target to generate assembly for a file
+src\organizmy\rosliny\Mlecz.cpp.s:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.s
+.PHONY : src\organizmy\rosliny\Mlecz.cpp.s
+
 src\organizmy\rosliny\Trawa.obj: src\organizmy\rosliny\Trawa.cpp.obj
 
 .PHONY : src\organizmy\rosliny\Trawa.obj
@@ -312,6 +366,87 @@ src\organizmy\rosliny\Trawa.s: src\organizmy\rosliny\Trawa.cpp.s
 src\organizmy\rosliny\Trawa.cpp.s:
 	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.s
 .PHONY : src\organizmy\rosliny\Trawa.cpp.s
+
+src\organizmy\zwierzeta\Goryl.obj: src\organizmy\zwierzeta\Goryl.cpp.obj
+
+.PHONY : src\organizmy\zwierzeta\Goryl.obj
+
+# target to build an object file
+src\organizmy\zwierzeta\Goryl.cpp.obj:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.obj
+.PHONY : src\organizmy\zwierzeta\Goryl.cpp.obj
+
+src\organizmy\zwierzeta\Goryl.i: src\organizmy\zwierzeta\Goryl.cpp.i
+
+.PHONY : src\organizmy\zwierzeta\Goryl.i
+
+# target to preprocess a source file
+src\organizmy\zwierzeta\Goryl.cpp.i:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.i
+.PHONY : src\organizmy\zwierzeta\Goryl.cpp.i
+
+src\organizmy\zwierzeta\Goryl.s: src\organizmy\zwierzeta\Goryl.cpp.s
+
+.PHONY : src\organizmy\zwierzeta\Goryl.s
+
+# target to generate assembly for a file
+src\organizmy\zwierzeta\Goryl.cpp.s:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Goryl.cpp.s
+.PHONY : src\organizmy\zwierzeta\Goryl.cpp.s
+
+src\organizmy\zwierzeta\Jez.obj: src\organizmy\zwierzeta\Jez.cpp.obj
+
+.PHONY : src\organizmy\zwierzeta\Jez.obj
+
+# target to build an object file
+src\organizmy\zwierzeta\Jez.cpp.obj:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.obj
+.PHONY : src\organizmy\zwierzeta\Jez.cpp.obj
+
+src\organizmy\zwierzeta\Jez.i: src\organizmy\zwierzeta\Jez.cpp.i
+
+.PHONY : src\organizmy\zwierzeta\Jez.i
+
+# target to preprocess a source file
+src\organizmy\zwierzeta\Jez.cpp.i:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.i
+.PHONY : src\organizmy\zwierzeta\Jez.cpp.i
+
+src\organizmy\zwierzeta\Jez.s: src\organizmy\zwierzeta\Jez.cpp.s
+
+.PHONY : src\organizmy\zwierzeta\Jez.s
+
+# target to generate assembly for a file
+src\organizmy\zwierzeta\Jez.cpp.s:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Jez.cpp.s
+.PHONY : src\organizmy\zwierzeta\Jez.cpp.s
+
+src\organizmy\zwierzeta\Lis.obj: src\organizmy\zwierzeta\Lis.cpp.obj
+
+.PHONY : src\organizmy\zwierzeta\Lis.obj
+
+# target to build an object file
+src\organizmy\zwierzeta\Lis.cpp.obj:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.obj
+.PHONY : src\organizmy\zwierzeta\Lis.cpp.obj
+
+src\organizmy\zwierzeta\Lis.i: src\organizmy\zwierzeta\Lis.cpp.i
+
+.PHONY : src\organizmy\zwierzeta\Lis.i
+
+# target to preprocess a source file
+src\organizmy\zwierzeta\Lis.cpp.i:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.i
+.PHONY : src\organizmy\zwierzeta\Lis.cpp.i
+
+src\organizmy\zwierzeta\Lis.s: src\organizmy\zwierzeta\Lis.cpp.s
+
+.PHONY : src\organizmy\zwierzeta\Lis.s
+
+# target to generate assembly for a file
+src\organizmy\zwierzeta\Lis.cpp.s:
+	$(MAKE) -f CMakeFiles\wirtualny_swiat_JPO.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\zwierzeta\Lis.cpp.s
+.PHONY : src\organizmy\zwierzeta\Lis.cpp.s
 
 src\organizmy\zwierzeta\Owca.obj: src\organizmy\zwierzeta\Owca.cpp.obj
 
@@ -394,9 +529,24 @@ help:
 	@echo ... src/organizmy/Zwierze.obj
 	@echo ... src/organizmy/Zwierze.i
 	@echo ... src/organizmy/Zwierze.s
+	@echo ... src/organizmy/rosliny/Koka.obj
+	@echo ... src/organizmy/rosliny/Koka.i
+	@echo ... src/organizmy/rosliny/Koka.s
+	@echo ... src/organizmy/rosliny/Mlecz.obj
+	@echo ... src/organizmy/rosliny/Mlecz.i
+	@echo ... src/organizmy/rosliny/Mlecz.s
 	@echo ... src/organizmy/rosliny/Trawa.obj
 	@echo ... src/organizmy/rosliny/Trawa.i
 	@echo ... src/organizmy/rosliny/Trawa.s
+	@echo ... src/organizmy/zwierzeta/Goryl.obj
+	@echo ... src/organizmy/zwierzeta/Goryl.i
+	@echo ... src/organizmy/zwierzeta/Goryl.s
+	@echo ... src/organizmy/zwierzeta/Jez.obj
+	@echo ... src/organizmy/zwierzeta/Jez.i
+	@echo ... src/organizmy/zwierzeta/Jez.s
+	@echo ... src/organizmy/zwierzeta/Lis.obj
+	@echo ... src/organizmy/zwierzeta/Lis.i
+	@echo ... src/organizmy/zwierzeta/Lis.s
 	@echo ... src/organizmy/zwierzeta/Owca.obj
 	@echo ... src/organizmy/zwierzeta/Owca.i
 	@echo ... src/organizmy/zwierzeta/Owca.s

@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <vector>
+#include "windows.h"
 
 #include "../include/Wyswietlanie.h"
 #include "../include/Swiat.h"
@@ -31,10 +32,19 @@ void Swiat::idz(Organizm *organizm, int _x, int _y) {
         y -= _y*2;
     }
 
+    // sprawdź czy miejsce jest wolne, jeżeli tak....
+
     organizm->przypiszWspolrzedne(x, y);
 }
 
 
+
+
+char Swiat::losujKierunek() {
+    int kierunek = 1 + (rand() % 4);
+
+    return kierunek;
+}
 
 
 int Swiat::podajWysokosc() {
@@ -106,9 +116,9 @@ int Swiat::iloscOrganizmow() {
 
 void Swiat::wypiszOgranizmy() {
     // raczej zbędne - do testów!
-//    for (int i=0; i < iloscOrganizmow(); i++) {
-//        cout << organizmy[i]->pozX << ", " << organizmy[i]->pozY <<endl;
-//    }
+    for (int i=0; i < iloscOrganizmow(); i++) {
+        cout << organizmy[i]->pozX << ", " << organizmy[i]->pozY <<endl;
+    }
 }
 
 
@@ -156,12 +166,15 @@ void Swiat::wykonajTure() {
 
     rysujMape();
 
-    for (auto &organizm : organizmy) {
-        if (organizm->zyje) {
-            organizm->akcja();
+//    Sleep(1);
+
+
+
+    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
+        if (organizmy[organizm]->zyje) {
+            organizmy[organizm]->akcja();
         }
     }
-
 
 
     // tu git
@@ -169,8 +182,57 @@ void Swiat::wykonajTure() {
     wyswietlanie.wyswietlPodpis();
 }
 
+bool Swiat::miejsceZajete(int x, int y) {
+    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
+        if (organizmy[organizm]->pozY == y && organizmy[organizm]->pozX == x) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Swiat::wolneWokol(int x, int y) {
+    return !(miejsceZajete(x - 1, y) && miejsceZajete(x + 1, y)
+             && miejsceZajete(x, y - 1) && miejsceZajete(x, y + 1));
+}
+
+void Swiat::rozmnoz(Organizm *organizm) {
+
+    if (wolneWokol(organizm->pozX, organizm->pozY)) {
+
+        int kierunek = losujKierunek();
+        int nowyX, nowyY;
+        int x = 0;
+        int y = 0;
 
 
+        Organizm *nowyOrganizm = organizm->dziecko();
+
+        // wolne miejsce działa prawidłowo
+        // problem jest nie mam pojęcia z czym, do sprawdzenia czy na pewno nie pojawia nam się obiekt na tym samym meijscu..
+
+        do {
+            switch (kierunek) {
+                case 1:
+                    y = -1;
+                    break;
+                case 2:
+                    x = 1;
+                    break;
+                case 3:
+                    y = 1;
+                    break;
+                case 4:
+                    x = -1;
+                    break;
+            }
+            nowyX = organizm->pozX + x;
+            nowyY = organizm->pozY + y;
+            kierunek = losujKierunek();
+        } while (miejsceZajete(nowyX, nowyY));
 
 
-
+        nowyOrganizm->przypiszWspolrzedne(nowyX, nowyY);
+        dodajOrganizm(nowyOrganizm);
+    }
+}

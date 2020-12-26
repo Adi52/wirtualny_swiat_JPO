@@ -11,9 +11,8 @@ Zwierze::Zwierze() {
 }
 
 void Zwierze::akcja() {
-
     // Poruszanie się zwierzęcia
-    int kierunek = 1 + (rand() % 4);
+    int kierunek = swiat->losujKierunek();
 
     int x = 0;
     int y = 0;

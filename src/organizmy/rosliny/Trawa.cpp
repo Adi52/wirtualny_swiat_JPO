@@ -8,3 +8,7 @@ Trawa::Trawa() {
     znak = "🌿";
 }
 
+Organizm *Trawa::dziecko() {
+    return new Trawa();
+}
+

@@ -10,7 +10,12 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Organizm.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Organizm.cpp.obj"
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Roslina.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Roslina.cpp.obj"
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Zwierze.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/Zwierze.cpp.obj"
+  "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Koka.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/rosliny/Koka.cpp.obj"
+  "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Mlecz.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/rosliny/Mlecz.cpp.obj"
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Trawa.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/rosliny/Trawa.cpp.obj"
+  "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Goryl.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Goryl.cpp.obj"
+  "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Jez.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Jez.cpp.obj"
+  "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Lis.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Lis.cpp.obj"
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Owca.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Owca.cpp.obj"
   "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Wilk.cpp" "C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/cmake-build-debug/CMakeFiles/wirtualny_swiat_JPO.dir/src/organizmy/zwierzeta/Wilk.cpp.obj"
   )
