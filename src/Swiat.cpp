@@ -168,9 +168,9 @@ void Swiat::wykonajTure() {
 
 //    Sleep(1);
 
+    int iloscOrganizmow = organizmy.size();
 
-
-    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
+    for (auto organizm=0; organizm < iloscOrganizmow; organizm++) {
         if (organizmy[organizm]->zyje) {
             organizmy[organizm]->akcja();
         }
@@ -208,28 +208,24 @@ void Swiat::rozmnoz(Organizm *organizm) {
 
         Organizm *nowyOrganizm = organizm->dziecko();
 
-        // wolne miejsce działa prawidłowo
-        // problem jest nie mam pojęcia z czym, do sprawdzenia czy na pewno nie pojawia nam się obiekt na tym samym meijscu..
 
-        do {
-            switch (kierunek) {
-                case 1:
-                    y = -1;
-                    break;
-                case 2:
-                    x = 1;
-                    break;
-                case 3:
-                    y = 1;
-                    break;
-                case 4:
-                    x = -1;
-                    break;
-            }
-            nowyX = organizm->pozX + x;
-            nowyY = organizm->pozY + y;
-            kierunek = losujKierunek();
-        } while (miejsceZajete(nowyX, nowyY));
+        switch (kierunek) {
+            case 1:
+                y = -1;
+                break;
+            case 2:
+                x = 1;
+                break;
+            case 3:
+                y = 1;
+                break;
+            case 4:
+                x = -1;
+                break;
+        }
+        nowyX = organizm->pozX + x;
+        nowyY = organizm->pozY + y;
+
 
 
         nowyOrganizm->przypiszWspolrzedne(nowyX, nowyY);
