@@ -28,6 +28,7 @@ public:
     char losujKierunek();
 
     void rozmnoz(Organizm *organizm);
+    void zabij(Organizm *organizm);
 
     int podajWysokosc();
     int podajSzerokosc();
@@ -38,10 +39,13 @@ public:
     bool organizmNaPolu(int x, int y);
     void wypiszOgranizmy(); // raczej do usuniecia.
 
+
     int poprawWspolrzendna(float wspolrzedna, char wariant) const;
     int iloscOrganizmow();
 
     Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);
+
+    std::vector<string> komunikaty;
 
 
 

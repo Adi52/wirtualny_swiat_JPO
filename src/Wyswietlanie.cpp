@@ -3,6 +3,7 @@
 //
 #include <iostream>
 
+
 #include "../include/Wyswietlanie.h"
 
 using namespace std;
@@ -14,17 +15,43 @@ Wyswietlanie::Wyswietlanie(int _wysokosc, int _szerokosc) {
 
 
 
-void Wyswietlanie::wyswietlAkcje(std::string wykonanaAkcja) {
-    int dlugoscAkcji = wykonanaAkcja.length();
+void Wyswietlanie::wyswietlAkcje(vector<string> komunikaty) {
+    int dlugoscAkcji = 0;
+    for (auto komunikat : komunikaty) {
+        if (komunikat.length() > dlugoscAkcji) {
+            dlugoscAkcji = komunikat.length();
+        }
+    }
+
 
     cout << "\n╔";
-    for (auto i=0; i<dlugoscAkcji + 9; i++) {
+    for (auto i=0; i<40; i++) {
         cout << "═";
     }
     cout << "╗\n";
-    cout << "║ Akcja: " << wykonanaAkcja << " ║\n";
+    cout << "║ Akcja: ";
+    for (auto i=0; i<31; i++) {
+        cout << " ";
+    }
+    cout << " ║\n";
+
+    for (auto komunikat : komunikaty) {
+        cout << "║ " << komunikat;
+        if (komunikat.length() == 25) {
+            for (auto i=0; i<17; i++) {
+                cout << "a";
+            }
+            cout << "║\n";
+        } else {
+            for (auto i=0; i<14; i++) {
+                cout << " ";
+            }
+            cout << "║\n";
+        }
+    }
+
     cout << "╚";
-    for (auto i=0; i<dlugoscAkcji + 9; i++) {
+    for (auto i=0; i<40; i++) {
         cout << "═";
     }
     cout << "╝\n";

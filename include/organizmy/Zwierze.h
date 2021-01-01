@@ -13,6 +13,7 @@ public:
     Zwierze();
 
     void akcja();
+    void kolizja(Organizm *atakujacy, Organizm *stojacy);
 };
 
 

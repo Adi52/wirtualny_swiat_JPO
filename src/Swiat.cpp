@@ -33,11 +33,20 @@ void Swiat::idz(Organizm *organizm, int _x, int _y) {
         y -= _y*2;
     }
 
-    organizm->przypiszWspolrzedne(x, y);
+    if (miejsceZajete(x, y)) {
+        for (auto organizmIndeks=0; organizmIndeks < iloscOrganizmow(); organizmIndeks++) {
+            if (organizmy[organizmIndeks]->pozY == y+1 && organizmy[organizmIndeks]->pozX == x) {
+                organizm->kolizja(organizm, organizmy[organizmIndeks]);
+            }
+        }
+    } else {
+        organizm->przypiszWspolrzedne(x, y);
+    }
 }
 
-
-
+void zabij(Organizm *organizm) {
+    organizm->zyje = false;
+}
 
 char Swiat::losujKierunek() {
     int kierunek = 1 + (rand() % 4);
@@ -91,13 +100,37 @@ void Swiat::poczatkowyStanMapy() {
     wilk3->przypiszWspolrzedne(6, 4);
     dodajOrganizm(wilk3);
 
+    Organizm * wilk4 = new Wilk();
+    wilk4->przypiszWspolrzedne(10, 14);
+    dodajOrganizm(wilk4);
+
+    Organizm * wilk5 = new Wilk();
+    wilk5->przypiszWspolrzedne(4, 17);
+    dodajOrganizm(wilk5);
+
+    Organizm * wilk6 = new Wilk();
+    wilk6->przypiszWspolrzedne(12, 9);
+    dodajOrganizm(wilk6);
+
     Organizm * owca1 = new Owca();
     owca1->przypiszWspolrzedne(12, 8);
     dodajOrganizm(owca1);
 
     Organizm * owca2 = new Owca();
-    owca2->przypiszWspolrzedne(16, 5);
+    owca2->przypiszWspolrzedne(12, 10);
     dodajOrganizm(owca2);
+
+    Organizm * owca3 = new Owca();
+    owca3->przypiszWspolrzedne(10, 5);
+    dodajOrganizm(owca3);
+
+    Organizm * owca4 = new Owca();
+    owca4->przypiszWspolrzedne(8, 3);
+    dodajOrganizm(owca4);
+
+    Organizm * owca5 = new Owca();
+    owca5->przypiszWspolrzedne(1, 8);
+    dodajOrganizm(owca5);
 
     Organizm * trawa1 = new Trawa();
     trawa1->przypiszWspolrzedne(4, 18);
@@ -123,7 +156,7 @@ void Swiat::wypiszOgranizmy() {
 
 bool Swiat::organizmNaPolu(int x, int y) {
     for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
-        if (organizmy[organizm]->pozY == y+1 && organizmy[organizm]->pozX == x) {
+        if (organizmy[organizm]->pozY == y+1 && organizmy[organizm]->pozX == x && organizmy[organizm]->zyje) {
             cout << organizmy[organizm]->znak;
             return true;
         }
@@ -158,6 +191,7 @@ void Swiat::rysujMape() {
 
 void Swiat::wykonajTure() {
     system("cls");
+    komunikaty.clear();
 
     runda++;
 
@@ -177,7 +211,7 @@ void Swiat::wykonajTure() {
 
 
     // tu git
-    wyswietlanie.wyswietlAkcje("const....");
+    wyswietlanie.wyswietlAkcje(komunikaty);
     wyswietlanie.wyswietlPodpis();
 }
 
@@ -221,11 +255,11 @@ void Swiat::rozmnoz(Organizm *organizm) {
             case 4:
                 x = -1;
                 break;
+            default:
+                break;
         }
         nowyX = organizm->pozX + x;
         nowyY = organizm->pozY + y;
-
-
 
         nowyOrganizm->przypiszWspolrzedne(nowyX, nowyY);
         dodajOrganizm(nowyOrganizm);

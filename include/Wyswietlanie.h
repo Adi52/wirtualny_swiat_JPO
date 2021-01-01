@@ -6,6 +6,7 @@
 #define WIRTUALNY_SWIAT_JPO_WYSWIETLANIE_H
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -16,7 +17,7 @@ public:
     int wysokosc;
     int szerokosc;
 
-    void wyswietlAkcje(string wykonanaAkcja);
+    void wyswietlAkcje(vector<string> komunikaty);
     void wyswietlPodpis();
     void wyswietlRunde(int);
 

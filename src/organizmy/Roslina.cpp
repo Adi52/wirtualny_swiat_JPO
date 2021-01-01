@@ -16,4 +16,8 @@ void Roslina::akcja() {
     }
 }
 
+void Roslina::kolizja(Organizm *atakujacy, Organizm *stojacy) {
+
+}
+
 

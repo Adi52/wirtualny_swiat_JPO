@@ -28,7 +28,7 @@ public:
 
     virtual Organizm *dziecko() = 0;
     virtual void akcja() = 0;
-//    virtual void kolizja() = 0;
+    virtual void kolizja(Organizm *atakujacy, Organizm *stojacy) = 0;
 
 
 protected:
