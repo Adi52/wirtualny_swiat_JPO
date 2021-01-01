@@ -21,6 +21,7 @@ Swiat::Swiat(int szer, int wys) {
 }
 
 void Swiat::idz(Organizm *organizm, int _x, int _y) {
+
     int x = organizm->pozX + _x;
     int y = organizm->pozY + _y;
 
@@ -31,8 +32,6 @@ void Swiat::idz(Organizm *organizm, int _x, int _y) {
         // Tak samo z górnymi i dolnymi krawędziami
         y -= _y*2;
     }
-
-    // sprawdź czy miejsce jest wolne, jeżeli tak....
 
     organizm->przypiszWspolrzedne(x, y);
 }
@@ -62,21 +61,21 @@ void Swiat::dodajOrganizm(Organizm *organizm) {
 }
 
 
-int Swiat::poprawWspolrzendna(float wspolrzedna, char wariant) const {
-    cout << szerokosc << "<- szerokosc!" << endl;
-
-    int nowaWspolrzedna = (int)round(wspolrzedna);
-
-    if (wariant == 'x' && nowaWspolrzedna > szerokosc){
-        return (int)round(nowaWspolrzedna % szerokosc);
-    }
-    else if (wariant == 'y' && nowaWspolrzedna > wysokosc) {
-        return (int)round(nowaWspolrzedna % wysokosc);
-    }
-    else {
-        return nowaWspolrzedna;
-    }
-}
+//int Swiat::poprawWspolrzendna(float wspolrzedna, char wariant) const {
+//    cout << szerokosc << "<- szerokosc!" << endl;
+//
+//    int nowaWspolrzedna = (int)round(wspolrzedna);
+//
+//    if (wariant == 'x' && nowaWspolrzedna > szerokosc){
+//        return (int)round(nowaWspolrzedna % szerokosc);
+//    }
+//    else if (wariant == 'y' && nowaWspolrzedna > wysokosc) {
+//        return (int)round(nowaWspolrzedna % wysokosc);
+//    }
+//    else {
+//        return nowaWspolrzedna;
+//    }
+//}
 
 
 void Swiat::poczatkowyStanMapy() {

@@ -12,27 +12,35 @@ Zwierze::Zwierze() {
 
 void Zwierze::akcja() {
     // Poruszanie się zwierzęcia
-    int kierunek = swiat->losujKierunek();
+    int x, y;
+    if (swiat->wolneWokol(this->pozX, this->pozY)) {
 
-    int x = 0;
-    int y = 0;
+        do {
+            int kierunek = swiat->losujKierunek();
+            x = 0;
+            y = 0;
 
-    switch (kierunek) {
-        case 1:
-            y = -1;
-            break;
-        case 2:
-            x = 1;
-            break;
-        case 3:
-            y = 1;
-            break;
-        case 4:
-            x = -1;
-            break;
+            switch (kierunek) {
+                case 1:
+                    y = -1;
+                    break;
+                case 2:
+                    x = 1;
+                    break;
+                case 3:
+                    y = 1;
+                    break;
+                case 4:
+                    x = -1;
+                    break;
+                default:
+                    break;
+            }
+        } while (swiat->miejsceZajete(this->pozX + x, this->pozY + y));
+
+
+
+        swiat->idz(this, x, y);
     }
-
-    swiat->idz(this, x, y);
-
 }
 
