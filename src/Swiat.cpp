@@ -10,6 +10,7 @@
 #include "../include/Swiat.h"
 #include "../include/organizmy/zwierzeta/Wilk.h"
 #include "../include/organizmy/zwierzeta/Owca.h"
+#include "../include/organizmy/zwierzeta/Lis.h"
 #include "../include/organizmy/rosliny/Trawa.h"
 #include "../include/organizmy/rosliny/Mlecz.h"
 
@@ -44,7 +45,6 @@ void Swiat::idz(Organizm *organizm, int _x, int _y) {
         }
 
     organizm->przypiszWspolrzedne(x, y);
-
 }
 
 
@@ -53,37 +53,11 @@ char Swiat::losujKierunek() {
     return kierunek;
 }
 
-
-int Swiat::podajWysokosc() {
-    return wysokosc;
-}
-
-int Swiat::podajSzerokosc() {
-    return szerokosc;
-}
-
 void Swiat::dodajOrganizm(Organizm *organizm) {
 //    cout << "Dodaje ogranizm " << organizm << endl;
     organizmy.push_back(organizm);
     organizm->umiescWSwiecie(this);
 }
-
-
-//int Swiat::poprawWspolrzendna(float wspolrzedna, char wariant) const {
-//    cout << szerokosc << "<- szerokosc!" << endl;
-//
-//    int nowaWspolrzedna = (int)round(wspolrzedna);
-//
-//    if (wariant == 'x' && nowaWspolrzedna > szerokosc){
-//        return (int)round(nowaWspolrzedna % szerokosc);
-//    }
-//    else if (wariant == 'y' && nowaWspolrzedna > wysokosc) {
-//        return (int)round(nowaWspolrzedna % wysokosc);
-//    }
-//    else {
-//        return nowaWspolrzedna;
-//    }
-//}
 
 
 void Swiat::poczatkowyStanMapy() {
@@ -99,17 +73,17 @@ void Swiat::poczatkowyStanMapy() {
     wilk3->przypiszWspolrzedne(6, 4);
     dodajOrganizm(wilk3);
 
-    Organizm * wilk4 = new Wilk();
-    wilk4->przypiszWspolrzedne(10, 14);
-    dodajOrganizm(wilk4);
+    Organizm * lis1 = new Lis();
+    lis1->przypiszWspolrzedne(10, 14);
+    dodajOrganizm(lis1);
 
-    Organizm * wilk5 = new Wilk();
-    wilk5->przypiszWspolrzedne(4, 17);
-    dodajOrganizm(wilk5);
+    Organizm * lis2 = new Lis();
+    lis2->przypiszWspolrzedne(4, 17);
+    dodajOrganizm(lis2);
 
-    Organizm * wilk6 = new Wilk();
-    wilk6->przypiszWspolrzedne(12, 9);
-    dodajOrganizm(wilk6);
+    Organizm * lis3 = new Lis();
+    lis3->przypiszWspolrzedne(12, 9);
+    dodajOrganizm(lis3);
 
     Organizm * owca1 = new Owca();
     owca1->przypiszWspolrzedne(12, 8);
@@ -228,23 +202,7 @@ void Swiat::wykonajTure() {
     // tu git
     wyswietlanie.wyswietlAkcje(komunikaty);
     wyswietlanie.wyswietlPodpis();
-//    cout << "organizmow: " << organizmy.size();
-//
-//    for (auto organizm=0; organizm < iloscOrganizmow; organizm++) {
-//        cout << organizmy[organizm]->pozX << "," << organizmy[organizm]->pozY << endl;
-//
-//    }
-
-//    zabijPozaMapa();
     zabijMartwe();
-}
-
-void Swiat::zabijPozaMapa() {
-    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
-        if (organizmy[organizm]->pozY > wysokosc || organizmy[organizm]->pozY < 0 || organizmy[organizm]->pozX <= 0 || organizmy[organizm]->pozX > szerokosc) {
-            organizmy[organizm]->zyje = false;
-        }
-    }
 }
 
 bool Swiat::punktPozaMapa(int x, int y) {
@@ -334,4 +292,14 @@ void Swiat::zabijMartwe() {
             ),
             organizmy.end()
     );
+}
+
+
+Organizm *Swiat::dajOgranizmNaPolu(int x, int y) {
+    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
+        if (organizmy[organizm]->pozY == y && organizmy[organizm]->pozX == x) {
+            return organizmy[organizm];
+        }
+    }
+    return nullptr;
 }

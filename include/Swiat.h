@@ -30,10 +30,6 @@ public:
     bool rozmnoz(Organizm *organizm);
 
     void zabijMartwe();
-    void zabijPozaMapa();
-
-    int podajWysokosc();
-    int podajSzerokosc();
 
 
     bool wolneWokol(int x, int y);
@@ -42,8 +38,9 @@ public:
     void wypiszOgranizmy(); // raczej do usuniecia.
     bool punktPozaMapa(int x, int y);
 
+    Organizm * dajOgranizmNaPolu(int x, int y);
 
-    int poprawWspolrzendna(float wspolrzedna, char wariant) const;
+
     int iloscOrganizmow();
 
     Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);

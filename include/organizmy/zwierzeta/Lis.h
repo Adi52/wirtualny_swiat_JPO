@@ -10,8 +10,11 @@
 class Lis: public Zwierze {
 public:
     Lis();
+    Organizm* dziecko();
+    void akcja();
 
 };
+
 
 
 #endif //WIRTUALNY_SWIAT_JPO_LIS_H

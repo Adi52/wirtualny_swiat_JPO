@@ -13,6 +13,7 @@ CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\Rosli
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\Zwierze.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\rosliny\Mlecz.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\rosliny\Trawa.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\zwierzeta\Lis.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\zwierzeta\Owca.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\zwierzeta\Wilk.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\src\Swiat.cpp
