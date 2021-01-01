@@ -23,33 +23,33 @@ Swiat::Swiat(int szer, int wys) {
 }
 
 void Swiat::idz(Organizm *organizm, int _x, int _y) {
-
     int x = organizm->pozX + _x;
     int y = organizm->pozY + _y;
 
     if (x > szerokosc || x < 1) {
         // Jeżeli natrafi na boczne krawędzie mapy to cofa się o jedno pole do środka mapy (od PIERWOTNEGO pola)
-        x -= _x*2;
-    } else if (y > wysokosc || y < 1) {
+        x -= _x * 2;
+    }
+    if (y > wysokosc || y < 1) {
         // Tak samo z górnymi i dolnymi krawędziami
         y -= _y*2;
     }
 
-    if (miejsceZajete(x, y)) {
-        for (auto organizmIndeks=0; organizmIndeks < iloscOrganizmow(); organizmIndeks++) {
-            if (organizmy[organizmIndeks]->pozY == y+1 && organizmy[organizmIndeks]->pozX == x) {
+
+    for (auto organizmIndeks=0; organizmIndeks < iloscOrganizmow(); organizmIndeks++) {
+            if (organizmy[organizmIndeks]->pozY == y && organizmy[organizmIndeks]->pozX == x) {
                 organizm->kolizja(organizm, organizmy[organizmIndeks]);
+                return;
             }
         }
-    } else {
-        organizm->przypiszWspolrzedne(x, y);
-    }
+
+    organizm->przypiszWspolrzedne(x, y);
+
 }
 
 
 char Swiat::losujKierunek() {
     int kierunek = 1 + (rand() % 4);
-
     return kierunek;
 }
 
@@ -214,7 +214,7 @@ void Swiat::wykonajTure() {
 
     rysujMape();
 
-//    Sleep(1);
+    Sleep(10);
 
     int iloscOrganizmow = organizmy.size();
 
@@ -228,10 +228,34 @@ void Swiat::wykonajTure() {
     // tu git
     wyswietlanie.wyswietlAkcje(komunikaty);
     wyswietlanie.wyswietlPodpis();
+//    cout << "organizmow: " << organizmy.size();
+//
+//    for (auto organizm=0; organizm < iloscOrganizmow; organizm++) {
+//        cout << organizmy[organizm]->pozX << "," << organizmy[organizm]->pozY << endl;
+//
+//    }
+
+//    zabijPozaMapa();
     zabijMartwe();
 }
 
+void Swiat::zabijPozaMapa() {
+    for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
+        if (organizmy[organizm]->pozY > wysokosc || organizmy[organizm]->pozY < 0 || organizmy[organizm]->pozX <= 0 || organizmy[organizm]->pozX > szerokosc) {
+            organizmy[organizm]->zyje = false;
+        }
+    }
+}
+
+bool Swiat::punktPozaMapa(int x, int y) {
+    return (x > szerokosc || x < 1 || y > wysokosc || y < 1);
+}
+
 bool Swiat::miejsceZajete(int x, int y) {
+    if (punktPozaMapa(x, y)) {
+        return true;
+    }
+
     for (auto organizm=0; organizm < iloscOrganizmow(); organizm++) {
         if (organizmy[organizm]->pozY == y && organizmy[organizm]->pozX == x) {
             return true;
@@ -245,41 +269,56 @@ bool Swiat::wolneWokol(int x, int y) {
              && miejsceZajete(x, y - 1) && miejsceZajete(x, y + 1));
 }
 
-void Swiat::rozmnoz(Organizm *organizm) {
+bool Swiat::rozmnoz(Organizm *organizm) {
+    bool naMapie = organizm->pozX >= 0 && organizm->pozX <= szerokosc
+            && organizm->pozY >= 0 && organizm->pozY <= wysokosc;
 
-    if (wolneWokol(organizm->pozX, organizm->pozY)) {
+    if (wolneWokol(organizm->pozX, organizm->pozY) && naMapie) {
 
-        int kierunek = losujKierunek();
+        int kierunek;
         int nowyX, nowyY;
         int x = 0;
         int y = 0;
-
+        int counter = 0;
 
         Organizm *nowyOrganizm = organizm->dziecko();
 
+        do {
+            kierunek = losujKierunek();
+            counter++;
+            if (counter == 5) {
+                break;
+            }
+            switch (kierunek) {
+                case 1:
+                    y = -1;
+                    break;
+                case 2:
+                    x = 1;
+                    break;
+                case 3:
+                    y = 1;
+                    break;
+                case 4:
+                    x = -1;
+                    break;
+                default:
+                    break;
+            }
+            nowyX = organizm->pozX + x;
+            nowyY = organizm->pozY + y;
+        } while (miejsceZajete(organizm->pozX + x, organizm->pozY + y));
 
-        switch (kierunek) {
-            case 1:
-                y = -1;
-                break;
-            case 2:
-                x = 1;
-                break;
-            case 3:
-                y = 1;
-                break;
-            case 4:
-                x = -1;
-                break;
-            default:
-                break;
+
+        if (nowyX > szerokosc || nowyX < 1 || nowyY > wysokosc || nowyY < 1) {
+            return false;
         }
-        nowyX = organizm->pozX + x;
-        nowyY = organizm->pozY + y;
 
         nowyOrganizm->przypiszWspolrzedne(nowyX, nowyY);
         dodajOrganizm(nowyOrganizm);
+        return true;
     }
+    return false;
 }
 
 

@@ -5,9 +5,6 @@
 #include "../../include/organizmy/Organizm.h"
 
 
-
-#include <vector>
-
 using namespace std;
 
 Organizm::Organizm() {

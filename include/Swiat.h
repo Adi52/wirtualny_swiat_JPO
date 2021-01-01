@@ -27,9 +27,10 @@ public:
     void idz(Organizm *organizm, int x, int y);
     char losujKierunek();
 
-    void rozmnoz(Organizm *organizm);
+    bool rozmnoz(Organizm *organizm);
 
     void zabijMartwe();
+    void zabijPozaMapa();
 
     int podajWysokosc();
     int podajSzerokosc();
@@ -39,6 +40,7 @@ public:
     bool miejsceZajete(int x, int y);
     bool organizmNaPolu(int x, int y);
     void wypiszOgranizmy(); // raczej do usuniecia.
+    bool punktPozaMapa(int x, int y);
 
 
     int poprawWspolrzendna(float wspolrzedna, char wariant) const;

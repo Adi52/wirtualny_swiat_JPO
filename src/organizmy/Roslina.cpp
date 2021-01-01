@@ -19,7 +19,8 @@ void Roslina::akcja() {
 }
 
 void Roslina::kolizja(Organizm *atakujacy, Organizm *stojacy) {
-
+    stojacy->zyje = false;
 }
+
 
 

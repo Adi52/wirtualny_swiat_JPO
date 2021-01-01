@@ -22,14 +22,19 @@ void Wyswietlanie::wyswietlAkcje(vector<string> komunikaty) {
     for (auto i=0; i<40; i++) {
         cout << "═";
     }
-    cout << "═\n";
-    cout << "║ Akcja: ";
+    cout << "╗\n";
+    cout << "║               ⚔ Akcja ⚔:               ║";
+    cout << "\n╚";
+    for (auto i=0; i<40; i++) {
+        cout << "═";
+    }
+    cout << "╝";
 
     int counter = 0;
 
     for (auto komunikat : komunikaty) {
         if (counter % 20 == 0) {
-            cout << "\n║ ";
+            cout << "\n ";
         }
         cout << komunikat;
         counter++;
@@ -41,13 +46,7 @@ void Wyswietlanie::wyswietlAkcje(vector<string> komunikaty) {
         }
 
     }
-
-    cout << "\n╚";
-    for (auto i=0; i<40; i++) {
-        cout << "═";
-    }
-    cout << "═";
-    cout << "\n";
+    cout << "\n\n";
 }
 
 

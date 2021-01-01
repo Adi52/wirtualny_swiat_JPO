@@ -39,12 +39,11 @@ void Zwierze::akcja() {
 
 
 void Zwierze::kolizja(Organizm *atakujacy, Organizm *stojacy) {
-
     if (atakujacy->znak == stojacy->znak) {
-        swiat->rozmnoz(stojacy);
-
-        std::string komunikat =  stojacy->znak + std::string("💞");
-        swiat->komunikaty.push_back(komunikat);
+        if (swiat->rozmnoz(stojacy)) {
+            std::string komunikat =  stojacy->znak + std::string("💞");
+            swiat->komunikaty.push_back(komunikat);
+        }
     } else {
 
         if (atakujacy->sila < stojacy->sila) {
