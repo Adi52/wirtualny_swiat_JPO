@@ -11,6 +11,8 @@
 #include "../include/organizmy/zwierzeta/Wilk.h"
 #include "../include/organizmy/zwierzeta/Owca.h"
 #include "../include/organizmy/rosliny/Trawa.h"
+#include "../include/organizmy/rosliny/Mlecz.h"
+
 
 using namespace std;
 
@@ -136,6 +138,22 @@ void Swiat::poczatkowyStanMapy() {
     Organizm * trawa2 = new Trawa();
     trawa2->przypiszWspolrzedne(11, 13);
     dodajOrganizm(trawa2);
+
+    Organizm * mlecz = new Mlecz();
+    mlecz->przypiszWspolrzedne(15, 4);
+    dodajOrganizm(mlecz);
+
+    Organizm * mlecz2 = new Mlecz();
+    mlecz2->przypiszWspolrzedne(5, 18);
+    dodajOrganizm(mlecz2);
+
+    Organizm * koka1 = new Mlecz();
+    koka1->przypiszWspolrzedne(14, 3);
+    dodajOrganizm(koka1);
+
+    Organizm * koka2 = new Mlecz();
+    koka2->przypiszWspolrzedne(2, 5);
+    dodajOrganizm(koka2);
 }
 
 int Swiat::iloscOrganizmow() {

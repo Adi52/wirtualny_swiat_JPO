@@ -11,6 +11,7 @@ CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\Wyswietlanie.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\Organizm.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\Roslina.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\Zwierze.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\rosliny\Mlecz.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\rosliny\Trawa.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\zwierzeta\Owca.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\Swiat.cpp.obj: ..\include\organizmy\zwierzeta\Wilk.h
@@ -36,8 +37,18 @@ CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\org
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\organizmy\Zwierze.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\src\organizmy\Zwierze.cpp
 
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\include\Swiat.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\include\Wyswietlanie.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\include\organizmy\Organizm.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\include\organizmy\Roslina.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\include\organizmy\rosliny\Koka.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Koka.cpp.obj: ..\src\organizmy\rosliny\Koka.cpp
 
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\include\Swiat.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\include\Wyswietlanie.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\include\organizmy\Organizm.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\include\organizmy\Roslina.h
+CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\include\organizmy\rosliny\Mlecz.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Mlecz.cpp.obj: ..\src\organizmy\rosliny\Mlecz.cpp
 
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\rosliny\Trawa.cpp.obj: ..\include\Swiat.h

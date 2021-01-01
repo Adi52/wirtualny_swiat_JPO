@@ -5,7 +5,7 @@
 #include "../../../include/organizmy/rosliny/Trawa.h"
 
 Trawa::Trawa() {
-    znak = "🌿";
+    znak = "🥦";
 }
 
 Organizm *Trawa::dziecko() {
