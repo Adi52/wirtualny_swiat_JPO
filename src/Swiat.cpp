@@ -44,9 +44,6 @@ void Swiat::idz(Organizm *organizm, int _x, int _y) {
     }
 }
 
-void zabij(Organizm *organizm) {
-    organizm->zyje = false;
-}
 
 char Swiat::losujKierunek() {
     int kierunek = 1 + (rand() % 4);
@@ -213,6 +210,7 @@ void Swiat::wykonajTure() {
     // tu git
     wyswietlanie.wyswietlAkcje(komunikaty);
     wyswietlanie.wyswietlPodpis();
+    zabijMartwe();
 }
 
 bool Swiat::miejsceZajete(int x, int y) {
@@ -264,4 +262,19 @@ void Swiat::rozmnoz(Organizm *organizm) {
         nowyOrganizm->przypiszWspolrzedne(nowyX, nowyY);
         dodajOrganizm(nowyOrganizm);
     }
+}
+
+
+void Swiat::zabijMartwe() {
+    // A kto umarł, ten nie żyje
+    organizmy.erase(
+            std::remove_if(
+                    organizmy.begin(),
+                    organizmy.end(),
+                    [](Organizm* organizm) -> bool {
+                        return !organizm->zyje;
+                    }
+            ),
+            organizmy.end()
+    );
 }

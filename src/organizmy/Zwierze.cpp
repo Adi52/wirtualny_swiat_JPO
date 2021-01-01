@@ -43,19 +43,21 @@ void Zwierze::kolizja(Organizm *atakujacy, Organizm *stojacy) {
     if (atakujacy->znak == stojacy->znak) {
         swiat->rozmnoz(stojacy);
 
-        std::string komunikat =  std::string("Organizm ") + stojacy->znak + " rozmnaza sie!";
+        std::string komunikat =  stojacy->znak + std::string("💞");
         swiat->komunikaty.push_back(komunikat);
     } else {
 
         if (atakujacy->sila < stojacy->sila) {
             atakujacy->zyje = false;
 
-            std::string komunikat =  std::string("Organizm ") + stojacy->znak + " zabija " + atakujacy->znak;
+            std::string komunikat =  stojacy->znak + std::string("⚔") + atakujacy->znak;
             swiat->komunikaty.push_back(komunikat);
         } else {
             stojacy->zyje = false;
+            atakujacy->pozX = stojacy->pozX;
+            atakujacy->pozY = stojacy->pozY;
 
-            std::string komunikat =  std::string("Organizm ") + atakujacy->znak + " zabija " + stojacy->znak;
+            std::string komunikat =  atakujacy->znak + std::string("🔪") + stojacy->znak;
             swiat->komunikaty.push_back(komunikat);
         }
     }

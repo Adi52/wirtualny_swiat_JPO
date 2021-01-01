@@ -28,7 +28,8 @@ public:
     char losujKierunek();
 
     void rozmnoz(Organizm *organizm);
-    void zabij(Organizm *organizm);
+
+    void zabijMartwe();
 
     int podajWysokosc();
     int podajSzerokosc();
@@ -46,6 +47,7 @@ public:
     Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);
 
     std::vector<string> komunikaty;
+
 
 
 

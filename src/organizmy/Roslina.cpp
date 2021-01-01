@@ -12,6 +12,8 @@ Roslina::Roslina() {
 
 void Roslina::akcja() {
     if (rand() % 100 < 10) { // 20% szans na rozprzestrzenienie się
+        std::string komunikat =  this->znak + std::string("🌱");
+        swiat->komunikaty.push_back(komunikat);
         swiat->rozmnoz(this);
     }
 }
