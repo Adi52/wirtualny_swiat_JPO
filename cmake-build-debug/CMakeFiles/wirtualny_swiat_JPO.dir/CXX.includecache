@@ -46,6 +46,10 @@ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Trawa
 ../Roslina.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h
 
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Goryl.h
+../Zwierze.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
+
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Jez.h
 ../Zwierze.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
@@ -87,10 +91,10 @@ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Trawa
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Mlecz.h
 ../include/organizmy/rosliny/Koka.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Koka.h
+../include/organizmy/zwierzeta/Goryl.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Goryl.h
 
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Zwierze.cpp
-../../include/Swiat.h
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
-../../include/organizmy/Zwierze.h
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Goryl.cpp
+../../../include/organizmy/zwierzeta/Goryl.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Goryl.h
 

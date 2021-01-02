@@ -15,6 +15,7 @@
 #include "../include/organizmy/rosliny/Trawa.h"
 #include "../include/organizmy/rosliny/Mlecz.h"
 #include "../include/organizmy/rosliny/Koka.h"
+#include "../include/organizmy/zwierzeta/Goryl.h"
 
 
 using namespace std;
@@ -67,6 +68,14 @@ void Swiat::dodajOrganizm(Organizm *organizm) {
 
 
 void Swiat::poczatkowyStanMapy() {
+    Organizm * goryl1 = new Goryl();
+    goryl1->przypiszWspolrzedne(1, 1);
+    dodajOrganizm(goryl1);
+
+    Organizm * goryl3 = new Goryl();
+    goryl3->przypiszWspolrzedne(20, 10);
+    dodajOrganizm(goryl3);
+
     Organizm * wilk1 = new Wilk();
     wilk1->przypiszWspolrzedne(5, 6);
     dodajOrganizm(wilk1);

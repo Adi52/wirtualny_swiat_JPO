@@ -10,6 +10,12 @@
 class Goryl: public Zwierze {
 public:
     Goryl();
+    Organizm* dziecko();
+    void kolizja(Organizm *atakujacy, Organizm *stojacy);
+
+private:
+    void zabijWilka(Organizm *organizm);
+    bool wykonanoZabojstwoWilka;
 
 };
 
