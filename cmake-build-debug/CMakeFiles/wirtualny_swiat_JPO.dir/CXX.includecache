@@ -30,7 +30,11 @@ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h
 ./Organizm.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
 
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Roslina.cpp
-../../include/organizmy/Roslina.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Mlecz.h
+../Roslina.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Roslina.h
+
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/rosliny/Mlecz.cpp
+../../../include/organizmy/rosliny/Mlecz.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/rosliny/Mlecz.h
 
