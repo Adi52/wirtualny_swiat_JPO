@@ -7,6 +7,7 @@
 
 Zwierze::Zwierze() {
     znak = 'z';
+    podwojnyRuch = false;
 }
 
 void Zwierze::akcja() {
@@ -36,6 +37,11 @@ void Zwierze::akcja() {
         }
 
         swiat->idz(this, x, y);
+
+        if (podwojnyRuch) {
+            akcja();
+        }
+
     } else {
         this->naJakDlugoZamrozony--;
         if (this->naJakDlugoZamrozony == 0) {
@@ -54,7 +60,6 @@ void Zwierze::kolizja(Organizm *atakujacy, Organizm *stojacy) {
             swiat->komunikaty.push_back(komunikat);
         }
     } else {
-
         if (atakujacy->sila < stojacy->sila) {
             atakujacy->zyje = false;
 
@@ -67,7 +72,15 @@ void Zwierze::kolizja(Organizm *atakujacy, Organizm *stojacy) {
 
             std::string komunikat =  atakujacy->znak + std::string("🔪") + stojacy->znak;
             swiat->komunikaty.push_back(komunikat);
+
+            if (stojacy->znak == "🌿") {
+                stojacy->kolizja(atakujacy, stojacy);
+            }
         }
     }
+}
+
+void Zwierze::dajPodwojnyRuch() {
+    podwojnyRuch = true;
 }
 

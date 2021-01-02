@@ -14,6 +14,10 @@ public:
 
     void akcja();
     void kolizja(Organizm *atakujacy, Organizm *stojacy);
+    void dajPodwojnyRuch();
+
+private:
+    bool podwojnyRuch;
 };
 
 

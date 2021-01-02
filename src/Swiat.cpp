@@ -14,9 +14,15 @@
 #include "../include/organizmy/zwierzeta/Jez.h"
 #include "../include/organizmy/rosliny/Trawa.h"
 #include "../include/organizmy/rosliny/Mlecz.h"
+#include "../include/organizmy/rosliny/Koka.h"
 
 
 using namespace std;
+
+template<typename Base, typename T>
+inline bool instanceof(const T*) {
+    return std::is_base_of<Base, T>::value;
+}
 
 Swiat::Swiat(int szer, int wys) {
     wysokosc = wys;
@@ -121,6 +127,10 @@ void Swiat::poczatkowyStanMapy() {
     trawa2->przypiszWspolrzedne(11, 13);
     dodajOrganizm(trawa2);
 
+    Organizm * trawa3 = new Trawa();
+    trawa3->przypiszWspolrzedne(17, 17);
+    dodajOrganizm(trawa3);
+
     Organizm * mlecz = new Mlecz();
     mlecz->przypiszWspolrzedne(15, 4);
     dodajOrganizm(mlecz);
@@ -129,13 +139,21 @@ void Swiat::poczatkowyStanMapy() {
     mlecz2->przypiszWspolrzedne(5, 18);
     dodajOrganizm(mlecz2);
 
-    Organizm * koka1 = new Mlecz();
+    Organizm * mlecz3 = new Mlecz();
+    mlecz3->przypiszWspolrzedne(18, 17);
+    dodajOrganizm(mlecz3);
+
+    Organizm * koka1 = new Koka();
     koka1->przypiszWspolrzedne(14, 3);
     dodajOrganizm(koka1);
 
-    Organizm * koka2 = new Mlecz();
+    Organizm * koka2 = new Koka();
     koka2->przypiszWspolrzedne(2, 5);
     dodajOrganizm(koka2);
+
+    Organizm * koka3 = new Koka();
+    koka3->przypiszWspolrzedne(20, 20);
+    dodajOrganizm(koka3);
 }
 
 int Swiat::iloscOrganizmow() {

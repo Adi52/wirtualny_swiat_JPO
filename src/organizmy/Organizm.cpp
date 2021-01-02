@@ -14,7 +14,7 @@ Organizm::Organizm() {
     pozY = 0;
 
     zamrozony = false;
-    naJakDlugoZamrozony = 2;
+    naJakDlugoZamrozony = 3;
     zyje = false;
     znak = 'A';
 }
