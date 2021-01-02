@@ -11,6 +11,7 @@
 #include "../include/organizmy/zwierzeta/Wilk.h"
 #include "../include/organizmy/zwierzeta/Owca.h"
 #include "../include/organizmy/zwierzeta/Lis.h"
+#include "../include/organizmy/zwierzeta/Jez.h"
 #include "../include/organizmy/rosliny/Trawa.h"
 #include "../include/organizmy/rosliny/Mlecz.h"
 
@@ -54,7 +55,6 @@ char Swiat::losujKierunek() {
 }
 
 void Swiat::dodajOrganizm(Organizm *organizm) {
-//    cout << "Dodaje ogranizm " << organizm << endl;
     organizmy.push_back(organizm);
     organizm->umiescWSwiecie(this);
 }
@@ -97,9 +97,17 @@ void Swiat::poczatkowyStanMapy() {
     owca3->przypiszWspolrzedne(10, 5);
     dodajOrganizm(owca3);
 
-    Organizm * owca4 = new Owca();
-    owca4->przypiszWspolrzedne(8, 3);
-    dodajOrganizm(owca4);
+    Organizm * jez1 = new Jez();
+    jez1->przypiszWspolrzedne(8, 3);
+    dodajOrganizm(jez1);
+
+    Organizm * jez2 = new Jez();
+    jez2->przypiszWspolrzedne(14, 8);
+    dodajOrganizm(jez2);
+
+    Organizm * jez3 = new Jez();
+    jez3->przypiszWspolrzedne(18, 10);
+    dodajOrganizm(jez3);
 
     Organizm * owca5 = new Owca();
     owca5->przypiszWspolrzedne(1, 8);
@@ -132,14 +140,6 @@ void Swiat::poczatkowyStanMapy() {
 
 int Swiat::iloscOrganizmow() {
     return organizmy.size();
-}
-
-
-void Swiat::wypiszOgranizmy() {
-    // raczej zbędne - do testów!
-    for (int i=0; i < iloscOrganizmow(); i++) {
-        cout << organizmy[i]->pozX << ", " << organizmy[i]->pozY <<endl;
-    }
 }
 
 
@@ -181,6 +181,7 @@ void Swiat::rysujMape() {
 void Swiat::wykonajTure() {
     system("cls");
     komunikaty.clear();
+    komunikatySpecjalne.clear();
 
     runda++;
 
@@ -188,7 +189,7 @@ void Swiat::wykonajTure() {
 
     rysujMape();
 
-    Sleep(10);
+//    Sleep(10);
 
     int iloscOrganizmow = organizmy.size();
 
@@ -198,9 +199,8 @@ void Swiat::wykonajTure() {
         }
     }
 
-
-    // tu git
     wyswietlanie.wyswietlAkcje(komunikaty);
+    wyswietlanie.wyswietlAkcjeSpecjalne(komunikatySpecjalne);
     wyswietlanie.wyswietlPodpis();
     zabijMartwe();
 }
@@ -302,4 +302,9 @@ Organizm *Swiat::dajOgranizmNaPolu(int x, int y) {
         }
     }
     return nullptr;
+}
+
+void Swiat::zamrozOgranizm(Organizm *organizm) {
+    organizm->zamrozony = true;
+
 }

@@ -26,6 +26,7 @@ public:
     void dodajOrganizm(Organizm *organizm);
     void idz(Organizm *organizm, int x, int y);
     char losujKierunek();
+    void zamrozOgranizm(Organizm *organizm);
 
     bool rozmnoz(Organizm *organizm);
 
@@ -35,7 +36,6 @@ public:
     bool wolneWokol(int x, int y);
     bool miejsceZajete(int x, int y);
     bool organizmNaPolu(int x, int y);
-    void wypiszOgranizmy(); // raczej do usuniecia.
     bool punktPozaMapa(int x, int y);
 
     Organizm * dajOgranizmNaPolu(int x, int y);
@@ -46,6 +46,7 @@ public:
     Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);
 
     std::vector<string> komunikaty;
+    std::vector<string> komunikatySpecjalne;
 
 
 

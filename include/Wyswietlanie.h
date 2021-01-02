@@ -18,6 +18,7 @@ public:
     int szerokosc;
 
     void wyswietlAkcje(vector<string> komunikaty);
+    void wyswietlAkcjeSpecjalne(vector<string> komunikatySpecjalne);
     void wyswietlPodpis();
     void wyswietlRunde(int);
 

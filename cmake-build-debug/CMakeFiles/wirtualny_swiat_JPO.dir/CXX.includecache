@@ -30,11 +30,9 @@ C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
 ./Organizm.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Organizm.h
 
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Lis.h
-../Zwierze.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/Zwierze.cpp
+../../include/Swiat.h
+C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/Swiat.h
+../../include/organizmy/Zwierze.h
 C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/Zwierze.h
-
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/src/organizmy/zwierzeta/Lis.cpp
-../../../include/organizmy/zwierzeta/Lis.h
-C:/Users/abiel/CLionProjects/wirtualny_swiat_JPO/include/organizmy/zwierzeta/Lis.h
 

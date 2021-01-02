@@ -30,14 +30,14 @@ int main() {
     Swiat swiat(szerokoscPlanszy, wysokoscPlanszy);
 
     swiat.poczatkowyStanMapy(); // Generuje organizmy wpisane na stałe
-
-    do {
+    cin.get(temp);
+    while(temp == '\n') {
         swiat.wykonajTure();
 
         cout << endl << "Naciśnij enter aby wykonać następną turę";
         cout << endl << "Aby wyjść wpisz 'q'" << endl;
         cin.get(temp);
-    } while(temp == '\n');
+    }
 
 
 

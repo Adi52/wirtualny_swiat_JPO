@@ -19,6 +19,8 @@ public:
     int pozX;
     int pozY;
 
+    bool zamrozony;
+    int naJakDlugoZamrozony;
     bool zyje;
     std::string znak;
 

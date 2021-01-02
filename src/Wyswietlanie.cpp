@@ -49,6 +49,25 @@ void Wyswietlanie::wyswietlAkcje(vector<string> komunikaty) {
     cout << "\n\n";
 }
 
+void Wyswietlanie::wyswietlAkcjeSpecjalne(vector<string> komunikatySpecjalne) {
+    cout << "\n╔";
+    for (auto i=0; i<40; i++) {
+        cout << "═";
+    }
+    cout << "╗\n";
+    cout << "║          ⚔ Akcja specjalna ⚔:          ║";
+    cout << "\n╚";
+    for (auto i=0; i<40; i++) {
+        cout << "═";
+    }
+    cout << "╝";
+
+    for (auto komunikat : komunikatySpecjalne) {
+        cout << "\n" << komunikat;
+    }
+    cout << "\n\n";
+}
+
 
 void Wyswietlanie::wyswietlRunde(int runda) {
     string zeroD = ((runda < 10) ? "0" : "\0"); // Sprawdza czy dodawać 0 przed numerem rundy (aby ładnie wyświeltało ramkę)

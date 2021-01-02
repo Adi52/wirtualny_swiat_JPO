@@ -13,6 +13,8 @@ Organizm::Organizm() {
     pozX = 0;
     pozY = 0;
 
+    zamrozony = false;
+    naJakDlugoZamrozony = 2;
     zyje = false;
     znak = 'A';
 }
