@@ -38,7 +38,6 @@ CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Roslina.cpp.obj: ..\src\organiz
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\Swiat.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\Wyswietlanie.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\organizmy\Organizm.h
-CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\organizmy\Roslina.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\include\organizmy\Zwierze.h
 CMakeFiles\wirtualny_swiat_JPO.dir\src\organizmy\Zwierze.cpp.obj: ..\src\organizmy\Zwierze.cpp
 

@@ -32,7 +32,7 @@ void Goryl::kolizja(Organizm *atakujacy, Organizm *stojacy) {
         std::string komunikat =  atakujacy->znak + std::string("🔪") + stojacy->znak;
         swiat->komunikaty.push_back(komunikat);
 
-        if (stojacy->znak == "🌿") {
+        if (stojacy->znak == "🌿" || stojacy->znak == "🌱" || stojacy->znak == "🥦") {
             stojacy->kolizja(atakujacy, stojacy);
         }
     }
