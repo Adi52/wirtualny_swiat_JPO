@@ -18,11 +18,14 @@ public:
     int inicjatywa;
     int pozX;
     int pozY;
+    int narodziny;
 
     bool zamrozony;
     int naJakDlugoZamrozony;
     bool zyje;
     std::string znak;
+
+    int podajIniciatywe() const;
 
     void umiescWSwiecie(Swiat *swiat);
     void przypiszWspolrzedne(float x, float y);
@@ -36,7 +39,6 @@ protected:
     Swiat *swiat;
 
 private:
-
 };
 
 #endif //WIRTUALNY_SWIAT_JPO_ORGANIZM_H

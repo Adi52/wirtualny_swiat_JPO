@@ -13,11 +13,12 @@ Organizm *Koka::dziecko() {
 }
 
 void Koka::kolizja(Organizm *atakujacy, Organizm *stojacy) {
+    Roslina::kolizja(atakujacy, stojacy);
+
     //Zwierze, które zjadło tę roślinę w następnej kolejce ma dodatkowy ruch.
     std::string komunikat =  atakujacy->znak + std::string(" po zjedzeniu ") + stojacy->znak + " w następnej turze będzie miał dodatkowy ruch!";
     swiat->komunikatySpecjalne.push_back(komunikat);
 
     reinterpret_cast<Zwierze &>(atakujacy).dajPodwojnyRuch();
-    Roslina::kolizja(atakujacy, stojacy);
 }
 

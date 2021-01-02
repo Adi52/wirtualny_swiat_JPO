@@ -18,13 +18,14 @@ public:
     void poczatkowyStanMapy();
     void wykonajTure();
     void idz(Organizm *organizm, int x, int y);
-    void zamrozOgranizm(Organizm *organizm);
+    static void zamrozOgranizm(Organizm *organizm);
     void zabijMartwe();
     void sortujOrganizmyPoIniciatywie();
 
     bool rozmnoz(Organizm *organizm);
     char losujKierunek();
     int runda;
+    int podajRunde() const;
 
     Organizm * dajOgranizmNaPolu(int x, int y);
 

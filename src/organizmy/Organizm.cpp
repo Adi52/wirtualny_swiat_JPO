@@ -23,10 +23,15 @@ Organizm::Organizm() {
 void Organizm::umiescWSwiecie(Swiat *nowySwiat) {
     zyje = true;
     swiat = nowySwiat;
+    narodziny = nowySwiat->podajRunde();
 }
 
 
 void Organizm::przypiszWspolrzedne(float x, float y) {
     this->pozX = x;
     this->pozY = y;
+}
+
+int Organizm::podajIniciatywe() const {
+    return inicjatywa;
 }

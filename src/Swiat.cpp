@@ -340,10 +340,17 @@ struct comp
     template<typename T>
     bool operator()(const T& l, const T& r) const
     {
-        return l->inicjatywa > r->inicjatywa;
+        if (l->podajIniciatywe() == r->podajIniciatywe()) {
+            return l->narodziny < r->narodziny;
+        }
+        return l->podajIniciatywe() > r->podajIniciatywe();
     }
 };
 
 void Swiat::sortujOrganizmyPoIniciatywie() {
     std::sort(organizmy.begin(), organizmy.end(), comp());
+}
+
+int Swiat::podajRunde() const {
+    return runda;
 };

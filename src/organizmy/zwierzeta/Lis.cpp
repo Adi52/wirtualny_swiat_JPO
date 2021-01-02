@@ -72,5 +72,4 @@ void Lis::akcja() {
     }
 
     swiat->idz(this, x, y);
-    Zwierze::akcja();
 }
