@@ -15,7 +15,7 @@ Organizm *Mlecz::dziecko() {
 void Mlecz::akcja() {
     // Podejmuje trzy próby rozprzestrzeniania w jednej turze
     for (auto i=0; i<3; i++) {
-        if (rand() % 100 < 10) {
+        if (rand() % 100 < 10 && swiat->runda<70) {
             std::string komunikat =  this->znak + std::string("💦");
             swiat->komunikaty.push_back(komunikat);
             swiat->rozmnoz(this);

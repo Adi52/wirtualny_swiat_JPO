@@ -16,7 +16,6 @@ public:
 private:
     void zabijWilka(Organizm *organizm);
     bool wykonanoZabojstwoWilka;
-
 };
 
 

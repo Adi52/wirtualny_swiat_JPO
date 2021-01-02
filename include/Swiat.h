@@ -15,43 +15,40 @@ class Organizm;
 class Swiat {
 public:
     Swiat(int, int);
-    int wysokosc;
-    int szerokosc;
-
-    int runda;
-
     void poczatkowyStanMapy();
     void wykonajTure();
-    void rysujMape();
-    void dodajOrganizm(Organizm *organizm);
     void idz(Organizm *organizm, int x, int y);
-    char losujKierunek();
     void zamrozOgranizm(Organizm *organizm);
+    void zabijMartwe();
+    void sortujOrganizmyPoIniciatywie();
 
     bool rozmnoz(Organizm *organizm);
-
-    void zabijMartwe();
-
-
-    bool wolneWokol(int x, int y);
-    bool miejsceZajete(int x, int y);
-    bool organizmNaPolu(int x, int y);
-    bool punktPozaMapa(int x, int y);
+    char losujKierunek();
+    int runda;
 
     Organizm * dajOgranizmNaPolu(int x, int y);
 
-
-    int iloscOrganizmow();
-
     Wyswietlanie wyswietlanie = Wyswietlanie(wysokosc, szerokosc);
-
     std::vector<string> komunikaty;
     std::vector<string> komunikatySpecjalne;
 
+protected:
+    void dodajOrganizm(Organizm *organizm);
 
 
 
 private:
+    int wysokosc;
+    int szerokosc;
+    int iloscOrganizmow();
+
+    void rysujMape();
+
+    bool miejsceZajete(int x, int y);
+    bool organizmNaPolu(int x, int y);
+    bool punktPozaMapa(int x, int y);
+    bool wolneWokol(int x, int y);
+
     std::vector<Organizm *> organizmy;
 };
 

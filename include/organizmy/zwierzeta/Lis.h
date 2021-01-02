@@ -12,7 +12,6 @@ public:
     Lis();
     Organizm* dziecko();
     void akcja();
-
 };
 
 

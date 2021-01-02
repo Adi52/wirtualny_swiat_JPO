@@ -32,11 +32,10 @@ public:
     virtual void akcja() = 0;
     virtual void kolizja(Organizm *atakujacy, Organizm *stojacy) = 0;
 
-
-
-
 protected:
     Swiat *swiat;
+
+private:
 
 };
 

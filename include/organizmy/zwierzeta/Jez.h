@@ -10,7 +10,6 @@
 class Jez: public Zwierze {
 public:
     Jez();
-
     Organizm* dziecko();
     void kolizja(Organizm *atakujacy, Organizm *stojacy);
 };

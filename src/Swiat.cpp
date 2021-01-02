@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "windows.h"
+#include <algorithm>
 
 #include "../include/Wyswietlanie.h"
 #include "../include/Swiat.h"
@@ -20,10 +21,6 @@
 
 using namespace std;
 
-template<typename Base, typename T>
-inline bool instanceof(const T*) {
-    return std::is_base_of<Base, T>::value;
-}
 
 Swiat::Swiat(int szer, int wys) {
     wysokosc = wys;
@@ -209,6 +206,7 @@ void Swiat::wykonajTure() {
     system("cls");
     komunikaty.clear();
     komunikatySpecjalne.clear();
+    sortujOrganizmyPoIniciatywie();
 
     runda++;
 
@@ -335,3 +333,17 @@ void Swiat::zamrozOgranizm(Organizm *organizm) {
     organizm->zamrozony = true;
 
 }
+
+struct comp
+{
+    // Customowa funkcja sortująca - sortowanie po inicjatywie;
+    template<typename T>
+    bool operator()(const T& l, const T& r) const
+    {
+        return l->inicjatywa > r->inicjatywa;
+    }
+};
+
+void Swiat::sortujOrganizmyPoIniciatywie() {
+    std::sort(organizmy.begin(), organizmy.end(), comp());
+};

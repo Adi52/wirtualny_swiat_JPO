@@ -11,6 +11,7 @@ public:
     Koka();
 
     Organizm* dziecko();
+private:
     void kolizja(Organizm *atakujacy, Organizm *stojacy);
 };
 
